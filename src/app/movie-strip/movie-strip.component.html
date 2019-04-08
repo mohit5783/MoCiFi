@@ -1,0 +1,15 @@
+
+<div class="container-fluid mx-auto">
+  <h4>{{MovieGroupTitle}}</h4>
+</div>
+  <div class="card-deck mx-auto">
+    <div class="card text-center" *ngFor="let mv of MoviesList? MoviesList.slice(0,5):[];  let i=index">
+      <img class="card-img-top" src="https://image.tmdb.org/t/p/w185{{mv.poster_path}}" alt="{{mv.title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{mv.title}}</h5>
+        {{mv.vote_average}}
+        <p class="card-text small">{{ (mv.overview.length>100)? (mv.overview | slice:0:100)+'..':(mv.overview) }}</p>
+      </div>
+      <div class="card-footer text-muted bg-warning">Releasing on {{mv.release_date}}</div>
+    </div>
+  </div>

@@ -1,0 +1,15 @@
+.btn-myOwn {
+    color: #e6502e;
+    background-color: transparent;
+    border-color: #e6502e;
+    font-weight: bold;
+}
+.btn-myOwn:hover, .btn-myOwn:focus, .btn-myOwn:active, .btn-myOwn.active, .open>.dropdown-toggle.btn-myOwn {
+    color: #ffffff;
+    background-color: #e6502e;
+}
+.TwoCharSelector
+{
+    color: #e6502e;
+    font-weight: bold;
+}
